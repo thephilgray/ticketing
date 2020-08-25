@@ -9,6 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: cd payments && npm install && npm run test:ci
         env:
           PERSONAL_TEST_STRIPE_KEY: ${{secrets.PERSONAL_TEST_STRIPE_KEY}}
