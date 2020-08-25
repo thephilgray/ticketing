@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ts-node-dev src/index.ts",
     "test": "env STRIPE_KEY=${PERSONAL_TEST_STRIPE_KEY} jest --watchAll --no-cache",
-    "test:ci": "env STRIPE_KEY=$PERSONAL_TEST_STRIPE_KEY jest"
+    "test:ci": "jest"
   },
   "jest": {
     "preset": "ts-jest",
